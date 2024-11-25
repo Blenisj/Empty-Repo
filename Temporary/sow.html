@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Statements of Work</title>
+</head>
+<body>
+    <header class="header">
+      <h1>Statements of Work</h1>
+    </header>
+
+    <div class="navbar">
+      <a href="index1.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="displayDrop()">Deliverables</button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="charter.html">Project Charter</a>
+          <a href="wbs.html">WBS</a>
+          <a href="sow.html">SOW</a>
+          <a href="gantt.html">Gantt Chart</a>
+          <a href="calendar.html">Working Calendar</a>
+          <a href="diagram.html">Project Network Diagram</a>
+          <a href="analysis.html">Critical Path Analysis</a>
+          <a href="estimates.html">Cost Estimates</a>
+          <a href="exercises.html">Team Building Exercises</a>
+          <a href="status.html">Status and Progress Report Templates</a>
+          <a href="plans.html">Risk Management Plans</a>
+        </div>
+      </div>
+    </div>
+
+  <script>
+    function displayDrop() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    };
+  </script>
+</body>
+</html>
