@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Team Member Page</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='assets/team-ace.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="blank-space">Meet The Team</div> 
+    <nav class="navbar bg-dark">
+        <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation" tabindex="0">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a class="nav-link text-white" href="{{ url_for('index') }}">Home</a></li>
+            <li><a class="nav-link text-white" href="{{ url_for('team') }}">Meet The Team</a></li>
+            <li>
+                <a class="nav-link text-white" href="#deliverables">Deliverables</a>
+            </li>
+            <div class="menu"><i class="fa-solid fa-bars"></i></div>
+        </ul>
+    </nav>
+<div class="container">
+    
+  
+    <header>
+        <!--page header in here-->
+        <div class="center-text">
+            <div>
+                <h2>Team A</h2>
+            </div>
+        </div>
+    </header>
+      
+    <section class="section">
+        <!--profile cards in here-->
+        <div id="1" class="card">
+            <div>
+                <img class="img" src="{{ url_for('static', filename='assets/demo-image.png') }}" alt="">
+            </div>
+        
+            <div class="info">
+                <h2>Team Member's Name</h2>
+                <p>Team member's role</p>
+            </div>
+            <div class="social">
+                <a href="#"><img src="{{ url_for('static', filename='assets/external-link.svg') }}" alt=""></a>
+                <a href="#"><img src="{{ url_for('static', filename='assets/github-logo.svg') }}" alt=""></a>
+                <a href="#"><img src="{{ url_for('static', filename='assets/behance-logo.svg') }}" alt=""></a>
+                <a href="#"><img src="{{ url_for('static', filename='assets/dribble-logo.svg') }}" alt=""></a>
+                
+            </div>
+        </div> 
+        <div id="2" class="card">
+            <div>
+                <img class="img" src="{{ url_for('static', filename='assets/demo-image.png') }}" alt="">
+            </div>
+            <div class="info">
+                <h2>Team Member's Name</h2>
+                <p>Team member's role</p>
+            </div>
+            <div class="social">
+                <a href="#"><img src="{{ url_for('static', filename='assets/external-link.svg') }}" alt=""></a>
+                <a href="#"><img src="{{ url_for('static', filename='assets/github-logo.svg') }}" alt=""></a>
+                <a href="#"><img src="{{ url_for('static', filename='assets/behance-logo.svg') }}" alt=""></a>
+                <a href="#"><img src="{{ url_for('static', filename='assets/dribble-logo.svg') }}" alt=""></a>
+                
+            </div>
+        </div>       
+        <div id="3" class="card">
+            <div>
+                <img class="img" src="{{ url_for('static', filename='assets/demo-image.png') }}" alt="">
+            </div>
+            <div class="info">
+                <h2>Team Member's Name</h2>
+                <p>Team member's role</p>
+            </div>
+            <div class="social">
+                <a href="#"><img src="{{ url_for('static', filename='assets/external-link.svg') }}" alt=""></a>
+                <a href="#"><img src="{{ url_for('static', filename='assets/github-logo.svg') }}" alt=""></a>
+                <a href="#"><img src="{{ url_for('static', filename='assets/behance-logo.svg') }}" alt=""></a>
+                <a href="#"><img src="{{ url_for('static', filename='assets/dribble-logo.svg') }}" alt=""></a>
+                
+            </div>
+        </div>           
+    </section>
+
+</div><!--end .container-->
+
+<footer class="footer">
+    <h3>Team A</h3>
+    <a href="https://start.ng" target="_blank">Start.ng 2020</a>
+</footer>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
