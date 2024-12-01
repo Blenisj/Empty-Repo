@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 import ganttChart  # Import the modified ganttChart.py
+import calender  # Import the modified calender.py
 
 app = Flask(__name__)
 
@@ -24,7 +25,8 @@ def deliverables():
         return redirect(url_for('deliverables'))
     
     gantt_html = ganttChart.create_gantt_chart(tasks)  # Generate the Gantt chart HTML
-    return render_template('deliverables.html', gantt_html=gantt_html, tasks=tasks)
+    calendar_html = calender.generate_calendar_html()  # Generate the calendar HTML
+    return render_template('deliverables.html', gantt_html=gantt_html, calendar_html=calendar_html, tasks=tasks)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=4000)
