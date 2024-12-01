@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deliverables</title>
+    <link href="{{ url_for('static', filename='styles/style.css') }}" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar bg-dark">
+        <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation" tabindex="0">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a class="nav-link text-white" href="{{ url_for('index') }}">Home</a></li>
+            <li><a class="nav-link text-white" href="{{ url_for('team') }}">Meet the team</a></li>
+            <li>
+                <a class="nav-link text-white" href="#deliverables">Deliverables</a>
+            </li>
+            <div class="menu"><i class="fa-solid fa-bars"></i></div>
+        </ul>
+    </nav>
+    <div class="blank-space">Deliverables</div> 
+
+    <div class="content-section">
+        <p>Project Charter</p>
+        <img src="" alt="">
+    </div>
+
+    <div class="content-section">
+        <p>Work Breakdown Structure</p>
+        <img src="" alt="">
+    </div>
+
+    <div class="content-section">
+        <p>Statement of Work</p>
+        <img src="" alt="">
+    </div>
+
+    <div class="content-section">
+        <h1>Gantt Chart</h1>
+        <form method="POST" action="{{ url_for('deliverables') }}">
+            <label for="task_name">Task Name:</label>
+            <input type="text" id="task_name" name="task_name" required>
+            <label for="start_date">Start Date:</label>
+            <input type="date" id="start_date" name="start_date" required>
+            <label for="end_date">End Date:</label>
+            <input type="date" id="end_date" name="end_date" required>
+            <button type="submit">Add Task</button>
+        </form>
+        <div id="gantt">{{ gantt_html|safe }}</div>
+    </div>
+
+    <div class="content-section">
+        <p>Working Calendar</p>
+        <img src="" alt="">
+    </div>
+
+    <div class="content-section">
+        <p>Project Network Diagram</p>
+        <img src="" alt="">
+    </div>
+
+    <div class="content-section">
+        <p>Critical Path Analysis</p>
+        <img src="" alt="">
+    </div>
+
+    <div class="content-section">
+        <p>Cost Estimates</p>
+        <img src="" alt="">
+    </div>
+
+    <div class="content-section">
+        <p>Team Building Exercises</p>
+        <img src="" alt="">
+    </div>
+
+    <div class="content-section">
+        <p>Status and Progress Report Templates</p>
+        <img src="" alt="">
+    </div>
+
+    <div class="content-section">
+        <p>Risk Management Plans</p>
+        <img src="" alt="">
+    </div>
+</body>
+</html>
