@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zippity Do Dah</title>
+    <title>Home</title>
     <link href="{{ url_for('static', filename='styles/style.css') }}" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="blank-space">Home</div> 
     <nav class="navbar bg-dark">
         <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation" tabindex="0">
             <span class="bar"></span>
@@ -15,14 +17,9 @@
         </div>
         <ul class="nav-list">
             <li><a class="nav-link text-white" href="{{ url_for('index') }}">Home</a></li>
-            <li><a class="nav-link text-white" href="{{ url_for('team') }}">Meet the team</a></li>
+            <li><a class="nav-link text-white" href="{{ url_for('team') }}">Meet The Team</a></li>
             <li>
-                <a class="nav-link text-white" href="{{ url_for('deliverables') }}">Deliverables</a>
-                <ul class="dropdown">
-                    <li><a class="dropdown-link text-white" href="#deliverable1">Service 1</a></li>
-                    <li><a class="dropdown-link text-white" href="#deliverable2">Service 2</a></li>
-                    <li><a class="dropdown-link text-white" href="#deliverable3">Service 3</a></li>
-                </ul>
+                <a class="nav-link text-white" href="#deliverables">Deliverables</a>
             </li>
             <div class="menu"><i class="fa-solid fa-bars"></i></div>
         </ul>
