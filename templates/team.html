@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Team Ace Members' Page</title>
+    <title>Team Member Page</title>
     <link rel="shortcut icon" href="{{ url_for('static', filename='assets/team-ace.png') }}" type="image/x-icon">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar bg-dark">
+    <div class="blank-space">Meet The Team</div> 
+    <nav class="navbar bg-dark">
         <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation" tabindex="0">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -16,14 +17,9 @@
         </div>
         <ul class="nav-list">
             <li><a class="nav-link text-white" href="{{ url_for('index') }}">Home</a></li>
-            <li><a class="nav-link text-white" href="{{ url_for('team') }}">Meet the team</a></li>
+            <li><a class="nav-link text-white" href="{{ url_for('team') }}">Meet The Team</a></li>
             <li>
-                <a class="nav-link text-white" href="{{ url_for('deliverables') }}">Deliverables</a>
-                <ul class="dropdown">
-                    <li><a class="dropdown-link text-white" href="#deliverable1">Service 1</a></li>
-                    <li><a class="dropdown-link text-white" href="#deliverable2">Service 2</a></li>
-                    <li><a class="dropdown-link text-white" href="#deliverable3">Service 3</a></li>
-                </ul>
+                <a class="nav-link text-white" href="#deliverables">Deliverables</a>
             </li>
             <div class="menu"><i class="fa-solid fa-bars"></i></div>
         </ul>
@@ -35,7 +31,7 @@
         <!--page header in here-->
         <div class="center-text">
             <div>
-                <h2>Zippity Doo Dah Team </h2>
+                <h2>Team A</h2>
             </div>
         </div>
     </header>
@@ -96,7 +92,7 @@
 </div><!--end .container-->
 
 <footer class="footer">
-    <h3>Team Ace</h3>
+    <h3>Team A</h3>
     <a href="https://start.ng" target="_blank">Start.ng 2020</a>
 </footer>
 
