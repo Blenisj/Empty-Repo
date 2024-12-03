@@ -1,8 +1,12 @@
-/* Reset margin, padding, and box-sizing for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.landstyle {
+    margin-top: 50px;
+    text-align: center;
 }
 
 /* Center text within its container */
@@ -183,6 +187,13 @@ body {
     padding: 20px;
     text-align: center;
     width: 80%;
+    margin: 2rem auto;
+}
+
+.image-index{
+    width: 80%;
+    padding: 20px;
+    text-align: center;
     margin: 2rem auto;
 }
 
