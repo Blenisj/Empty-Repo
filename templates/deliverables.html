@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="blank-space">Deliverables</div> 
     <nav class="navbar bg-dark">
         <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation" tabindex="0">
             <span class="bar"></span>
@@ -19,12 +19,11 @@
             <li><a class="nav-link text-white" href="{{ url_for('index') }}">Home</a></li>
             <li><a class="nav-link text-white" href="{{ url_for('team') }}">Meet the team</a></li>
             <li>
-                <a class="nav-link text-white" href="{{ url_for('deliverables') }}">Deliverables</a>
+                <li><a class="nav-link text-white" href="{{ url_for('deliverables') }}">Deliverables</a></li>
             </li>
             <div class="menu"><i class="fa-solid fa-bars"></i></div>
         </ul>
     </nav>
-    <div class="blank-space">Deliverables</div> 
 
     <div class="content-section">
         <p>Project Charter</p>
