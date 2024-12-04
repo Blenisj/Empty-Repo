@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="blank-space">Meet The Team</div> 
@@ -18,9 +19,7 @@
         <ul class="nav-list">
             <li><a class="nav-link text-white" href="{{ url_for('index') }}">Home</a></li>
             <li><a class="nav-link text-white" href="{{ url_for('team') }}">Meet The Team</a></li>
-            <li>
-                <li><a class="nav-link text-white" href="{{ url_for('deliverables') }}">Deliverables</a></li>
-            </li>
+            <li><a class="nav-link text-white" href="{{ url_for('deliverables') }}">Deliverables</a></li>
             <div class="menu"><i class="fa-solid fa-bars"></i></div>
         </ul>
     </nav>
@@ -44,8 +43,8 @@
             </div>
         
             <div class="info">
-                <h2>Team Member's Name</h2>
-                <p>Team member's role</p>
+                <h2>Jacob Blenis</h2>
+                <p>Project Manager</p>
             </div>
             <div class="social">
                 <a href="#"><img src="{{ url_for('static', filename='assets/external-link.svg') }}" alt=""></a>

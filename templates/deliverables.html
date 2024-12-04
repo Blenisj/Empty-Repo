@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deliverables</title>
-    <link href="{{ url_for('static', filename='styles/style.css') }}" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Deliverables</title>
+        <link href="{{ url_for('static', filename='styles/style.css') }}" rel="stylesheet" />
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
 <body>
     <div class="blank-space">Deliverables</div> 
     <nav class="navbar bg-dark">
@@ -17,108 +20,140 @@
         </div>
         <ul class="nav-list">
             <li><a class="nav-link text-white" href="{{ url_for('index') }}">Home</a></li>
-            <li><a class="nav-link text-white" href="{{ url_for('team') }}">Meet the team</a></li>
+            <li><a class="nav-link text-white" href="{{ url_for('team') }}">Meet The Team</a></li>
             <li>
-                <a class="nav-link text-white" href="#deliverables">Deliverables</a>
+                <a class="nav-link text-white" href="{{ url_for('deliverables') }}">Deliverables</a>
             </li>
             <div class="menu"><i class="fa-solid fa-bars"></i></div>
         </ul>
     </nav>
-
     <div class="content-section">
-    <p class="title">Project Charter</p>
-    <br>
-    <p><strong>Project Title: </strong>TriForce Innovators: A Collaborative Web-Based Portfolio Showcase</p>
-    <p><strong>Date of Authorization: </strong>November 22, 2024</p>
-    <p><strong>Project Manager's Name:</strong> Jacob Blenis</p>
-    <br>
-    <p class="bold">Summary Schedule / Duration:</p>
-    <p><strong>Start Date: </strong>November 22, 2024</p>
-    <p><strong>End Date: </strong>December 3, 2024</p>
-    <p><strong>Duration: </strong>12 days</p>
-    <br>
-    <p class="bold">Summary Budget:</p>
-    <p>The project is budgeted at $200, covering web hosting, domain registration, design software licenses, and contingency for additional tools.</p>
-    <br>
-    <p class="bold">Objectives / Justification / Business Need:</p>
-    <p>The TriForce Innovators project aims to create a dynamic, collaborative web-based portfolio prototype demonstrating our team's technical skills in web development, project management, and design. This initiative addresses the growing demand for comprehensive, visually appealing, and interactive online portfolios for professionals and teams in technology and creative industries.</p>
-    <br>
-    <p class="bold">Project Success Criteria:</p>
-    <p><strong>1. </strong>The prototype functions seamlessly across all major web browsers.</p>
-    <p><strong>2. </strong>The portfolio showcases all team contributions effectively.</p>
-    <p><strong>3. </strong>Stakeholder feedback indicates satisfaction with usability, design, and functionality.</p>
-    <p><strong>4. </strong>The project meets all deliverables and deadlines.</p>
-    <br>
-    <p class="bold">Assumptions and Constraints / Concerns:</p>
-    <p><strong>Assumptions:</strong></p>
-    <p>1. All team members will commit their required hours to complete assigned tasks.</p>
-    <p>2. Software tools and hosting services will remain functional without interruption.</p>
-    <p>3. Stakeholders will provide timely feedback on deliverables.</p>
-    <br>
-    <p><strong>Constraints:</strong></p>
-    <p>1. A tight schedule of 12 days to deliver all components.</p>
-    <p>2. A limited budget of $200.</p>
-    <p>3. Reliance on team members' availability and skill sets.</p>
-    <br>
-    <p><strong>Concerns:</strong></p>
-    <p>1. Potential delays due to unforeseen technical challenges.</p>
-    <p>2. Risks of miscommunication in a short timeline.</p>
-    <br>
-    <p class="bold">Roles and Responsibilities:</p>
-    <p><strong>Jacob Blenis (Project Manager & Lead Developer):</strong> Oversees project execution, schedules tasks, and develops back-end functionality.</p>
-    <p><strong>Trey Burling (UI/UX Specialist):</strong> Designs the layout, creates CSS/HTML templates, and ensures visual coherence.</p>
-    <p><strong>Varun Raj Grandhi (Technical Lead):</strong> Integrates components, manages risk, handles testing, and ensures overall quality assurance.</p>
-    <br>
-    <p class="bold">Communication Standards:</p>
-    <p>1. <strong>Weekly Updates:</strong> Team members will provide daily status updates via Slack at 5:00 PM.</p>
-    <p>2. <strong>Bi-Weekly Meetings:</strong> Virtual meetings on November 27 and December 2 to review progress and address issues.</p>
-    <p>3. <strong>Email Correspondence:</strong> For formal updates and submission of deliverables.</p>
-    <br>
-    <p class="bold">Stakeholder Sign-Off:</p>
-    <table class="sign-off-table">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Role</th>
-                <th>Signature</th>
-                <th>Date</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Jacob Blenis</td>
-                <td>Project Manager</td>
-                <td>Jacob Blenis</td>
-                <td>November 22, 2024</td>
-            </tr>
-            <tr>
-                <td>Trey Burling</td>
-                <td>UI/UX Specialist</td>
-                <td>Trey Burling</td>
-                <td>November 22, 2024</td>
-            </tr>
-            <tr>
-                <td>Varun Raj Grandhi</td>
-                <td>Technical Lead</td>
-                <td>Varun Raj Grandhi</td>
-                <td>November 22, 2024</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+        
+            <div class="card w-75">
+                <div class="card-header" id="headingProjectCharter">
+                    <h2 class="mb-0">
+                        <button class="title collapsed border-0" type="button" data-toggle="collapse" data-target="#collapseProjectCharter" aria-expanded="false" aria-controls="collapseProjectCharter">
+                            Project Charter
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseProjectCharter" class="collapse" aria-labelledby="headingProjectCharter" data-parent="#deliverablesAccordion">
+                    <div class="card-body">
+                        <p><strong>Project Title: </strong>TriForce Innovators: A Collaborative Web-Based Portfolio Showcase</p>
+                        <p><strong>Date of Authorization: </strong>November 22, 2024</p>
+                        <p><strong>Project Manager's Name:</strong> Jacob Blenis</p>
+                        <br>
+                        <p class="bold">Summary Schedule / Duration:</p>
+                        <p><strong>Start Date: </strong>November 22, 2024</p>
+                        <p><strong>End Date: </strong>December 3, 2024</p>
+                        <p><strong>Duration: </strong>12 days</p>
+                        <br>
+                        <p class="bold">Summary Budget:</p>
+                        <p>The project is budgeted at $200, covering web hosting, domain registration, design software licenses, and contingency for additional tools.</p>
+                        <br>
+                        <p class="bold">Objectives / Justification / Business Need:</p>
+                        <p>The TriForce Innovators project aims to create a dynamic, collaborative web-based portfolio prototype demonstrating our team's technical skills in web development, project management, and design. This initiative addresses the growing demand for comprehensive, visually appealing, and interactive online portfolios for professionals and teams in technology and creative industries.</p>
+                        <br>
+                        <p class="bold">Project Success Criteria:</p>
+                        <p><strong>1. </strong>The prototype functions seamlessly across all major web browsers.</p>
+                        <p><strong>2. </strong>The portfolio showcases all team contributions effectively.</p>
+                        <p><strong>3. </strong>Stakeholder feedback indicates satisfaction with usability, design, and functionality.</p>
+                        <p><strong>4. </strong>The project meets all deliverables and deadlines.</p>
+                        <br>
+                        <p class="bold">Assumptions and Constraints / Concerns:</p>
+                        <p><strong>Assumptions:</strong></p>
+                        <p>1. All team members will commit their required hours to complete assigned tasks.</p>
+                        <p>2. Software tools and hosting services will remain functional without interruption.</p>
+                        <p>3. Stakeholders will provide timely feedback on deliverables.</p>
+                        <br>
+                        <p><strong>Constraints:</strong></p>
+                        <p>1. A tight schedule of 12 days to deliver all components.</p>
+                        <p>2. A limited budget of $200.</p>
+                        <p>3. Reliance on team members' availability and skill sets.</p>
+                        <br>
+                        <p><strong>Concerns:</strong></p>
+                        <p>1. Potential delays due to unforeseen technical challenges.</p>
+                        <p>2. Risks of miscommunication in a short timeline.</p>
+                        <br>
+                        <p class="bold">Roles and Responsibilities:</p>
+                        <p><strong>Jacob Blenis (Project Manager & Lead Developer):</strong> Oversees project execution, schedules tasks, and develops back-end functionality.</p>
+                        <p><strong>Trey Burling (UI/UX Specialist):</strong> Designs the layout, creates CSS/HTML templates, and ensures visual coherence.</p>
+                        <p><strong>Varun Raj Grandhi (Technical Lead):</strong> Integrates components, manages risk, handles testing, and ensures overall quality assurance.</p>
+                        <br>
+                        <p class="bold">Communication Standards:</p>
+                        <p>1. <strong>Weekly Updates:</strong> Team members will provide daily status updates via Slack at 5:00 PM.</p>
+                        <p>2. <strong>Bi-Weekly Meetings:</strong> Virtual meetings on November 27 and December 2 to review progress and address issues.</p>
+                        <p>3. <strong>Email Correspondence:</strong> For formal updates and submission of deliverables.</p>
+                        <br>
+                        <p class="bold">Stakeholder Sign-Off:</p>
+                        <table class="sign-off-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Role</th>
+                                    <th>Signature</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Jacob Blenis</td>
+                                    <td>Project Manager</td>
+                                    <td>Jacob Blenis</td>
+                                    <td>November 22, 2024</td>
+                                </tr>
+                                <tr>
+                                    <td>Trey Burling</td>
+                                    <td>UI/UX Specialist</td>
+                                    <td>Trey Burling</td>
+                                    <td>November 22, 2024</td>
+                                </tr>
+                                <tr>
+                                    <td>Varun Raj Grandhi</td>
+                                    <td>Technical Lead</td>
+                                    <td>Varun Raj Grandhi</td>
+                                    <td>November 22, 2024</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
 
 
     
 
-    <div class="content-section">
-        <p class="title">Work Breakdown Structure</p>
-        <img src="{{ url_for('static', filename='images/wbs.png') }}" alt="Picture of Work Breakdown Structure">
-    </div>
-
-    <div class="content-section">
-    <p class="title">Statements of Work</p>
-    <br>
-    <p class="bold">1. Scope of Work:</p>
+            <div class="content-section">
+                <div class="accordion" id="deliverablesAccordion">
+                    <!-- Work Breakdown Structure Card -->
+                    <div class="card w-100">
+                        <div class="card-header" id="headingWBS">
+                            <h2 class="mb-0">
+                                <button class="title collapsed border-0" type="button" data-toggle="collapse" data-target="#collapseWBS" aria-expanded="false" aria-controls="collapseWBS">
+                                    Work Breakdown Structure
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseWBS" class="collapse" aria-labelledby="headingWBS" data-parent="#deliverablesAccordion">
+                            <div class="card-body">
+                                <img src="{{ url_for('static', filename='images/wbs.png') }}" alt="Picture of Work Breakdown Structure" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-section">
+            <div class="card w-100">
+                <div class="card-header" id="headingSOW">
+                    <h2 class="mb-0">
+                        <button class="title collapsed border-0" type="button" data-toggle="collapse" data-target="#collapseSOW" aria-expanded="false" aria-controls="collapseSOW">
+                            Statements of Work
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseSOW" class="collapse" aria-labelledby="headingSOW" data-parent="#deliverablesAccordion">
+                    <div class="card-body">
+                        <p class="bold">1. Scope of Work:</p>
     <p>The scope of this project is to design, develop, test, and deploy a web-based portfolio prototype. The portfolio will showcase the team's web development skills, documenting the steps taken throughout the project and demonstrating the capabilities of the final product. The scope includes:</p>
     <p> - Planning and design of the user interface and user experience (UI/UX)</p>
     <p> - Development of front-end and back-end systems</p>
@@ -228,7 +263,11 @@
             </tr>
         </tbody>
     </table>
-</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <div class="content-section">
         <p class="title">Gantt Chart</p>
@@ -250,50 +289,71 @@
     </div>
 
     <div class="content-section">
-        <p class="title">Working Calendar</p>
+        <p class="title">Working Calender</p>
+        <form method="POST" action="{{ url_for('deliverables') }}">
+            <label for="event_name">Event Name:</label>
+            <input type="text" id="event_name" name="event_name" required>
+            <label for="event_date">Event Date:</label>
+            <input type="date" id="event_date" name="event_date" required>
+            <button type="submit" name="add_event">Add Event</button>
+        </form>
         <div id="calendar">{{ calendar_html|safe }}</div>
     </div>
-
     <div class="content-section">
-    <p class="title">Project Network Diagram</p>
-    <img src="{{ url_for('static', filename='images/pnd.png') }}" alt="Picture of Project Network Diagram">
-    <br>
-    <br>
-    <br>
-    <p class="bold">Activity Labels and Their Descriptions:</p>
-    <br>
-    <p><strong>A: Research & Concept Development</strong></p>
-    <p>Conduct initial research and develop concepts for the portfolio prototype.</p>
-    <br>
-    <p><strong>B: Wireframes & Mockups</strong></p>
-    <p>Design wireframes and mockups for the user interface and experience.</p>
-    <br>
-    <p><strong>C: Feedback & Iteration</strong></p>
-    <p>Collect feedback on the wireframes and mockups, iterate and refine designs.</p>
-    <br>
-    <p><strong>D: Front-End Development</strong></p>
-    <p>Develop the user interface using HTML, CSS, and JavaScript.</p>
-    <br>
-    <p><strong>E: Back-End Development</strong></p>
-    <p>Develop the server-side components, including database integration.</p>
-    <br>
-    <p><strong>F: Integration of Components</strong></p>
-    <p>Combine front-end and back-end systems for a fully functional prototype.</p>
-    <br>
-    <p><strong>G: Unit & Integration Testing</strong></p>
-    <p>Conduct unit and integration testing to ensure proper functionality.</p>
-    <br>
-    <p><strong>H: User Acceptance Testing (UAT)</strong></p>
-    <p>Perform UAT with stakeholders to validate the prototype.</p>
-    <br>
-    <p><strong>I: Bug Fixing & Optimization</strong></p>
-    <p>Fix identified bugs and optimize the portfolio for performance.</p>
-    <br>
-    <p><strong>J: Final Review & Deployment</strong></p>
-    <p>Conduct a final review and deploy the portfolio prototype.</p>
-    <br>
-    <p><strong>K: Documentation & Stakeholder Sign-Off</strong></p>
-    <p>Complete all project documentation and obtain stakeholder approval.</p>
+        <div class="accordion" id="deliverablesAccordion">
+            <!-- Project Network Diagram Card -->
+            <div class="card w-100">
+                <div class="card-header" id="headingPND">
+                    <h2 class="mb-0">
+                        <button class="title collapsed border-0" type="button" data-toggle="collapse" data-target="#collapsePND" aria-expanded="false" aria-controls="collapsePND">
+                            Project Network Diagram
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapsePND" class="collapse" aria-labelledby="headingPND" data-parent="#deliverablesAccordion">
+                    <div class="card-body">
+                        <img src="{{ url_for('static', filename='images/pnd.png') }}" alt="Picture of Project Network Diagram" class="img-fluid">
+                        <br>
+                        <br>
+                        <br>
+                        <p class="bold">Activity Labels and Their Descriptions:</p>
+                        <br>
+                        <p><strong>A: Research & Concept Development</strong></p>
+                        <p>Conduct initial research and develop concepts for the portfolio prototype.</p>
+                        <br>
+                        <p><strong>B: Wireframes & Mockups</strong></p>
+                        <p>Design wireframes and mockups for the user interface and experience.</p>
+                        <br>
+                        <p><strong>C: Feedback & Iteration</strong></p>
+                        <p>Collect feedback on the wireframes and mockups, iterate and refine designs.</p>
+                        <br>
+                        <p><strong>D: Front-End Development</strong></p>
+                        <p>Develop the user interface using HTML, CSS, and JavaScript.</p>
+                        <br>
+                        <p><strong>E: Back-End Development</strong></p>
+                        <p>Develop the server-side components, including database integration.</p>
+                        <br>
+                        <p><strong>F: Integration of Components</strong></p>
+                        <p>Combine front-end and back-end systems for a fully functional prototype.</p>
+                        <br>
+                        <p><strong>G: Unit & Integration Testing</strong></p>
+                        <p>Conduct unit and integration testing to ensure proper functionality.</p>
+                        <br>
+                        <p><strong>H: User Acceptance Testing (UAT)</strong></p>
+                        <p>Perform UAT with stakeholders to validate the prototype.</p>
+                        <br>
+                        <p><strong>I: Bug Fixing & Optimization</strong></p>
+                        <p>Fix identified bugs and optimize the portfolio for performance.</p>
+                        <br>
+                        <p><strong>J: Final Review & Deployment</strong></p>
+                        <p>Conduct a final review and deploy the portfolio prototype.</p>
+                        <br>
+                        <p><strong>K: Documentation & Stakeholder Sign-Off</strong></p>
+                        <p>Complete all project documentation and obtain stakeholder approval.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -470,289 +530,322 @@
     </div>
 
     <div class="content-section">
-    <p class="title">Team Building Exercises</p>
-    <br>
-    <p class="bold">Exercise Title:</p>
-    <p>Collaborative Code Sprint Challenge</p>
-    <br>
-    <p class="bold">Objective:</p>
-    <p>To improve teamwork, communication, and collaboration while reinforcing key project skills such as task delegation, efficient problem-solving, and adhering to project deadlines.</p>
-    <br>
-    <p class="bold">Activity Description:</p>
-    <p><strong>Overview:</strong> The team will participate in a simulated coding challenge that mimics real project scenarios. The goal is to collaboratively build a small feature or fix an issue within a predefined time. The exercise emphasizes cross-functional collaboration and skill-sharing.</p>
-    <br>
-    <p class="bold">Preparation:</p>
-    <p><strong>Timeframe:</strong> 2 hours</p>
-    <p><strong>Tools Required:</strong> Laptops, internet connection, shared Git repository, communication tools (e.g., Slack, Zoom)</p>
-    <p><strong>Pre-Defined Task:</strong> Create a responsive web page integrating a basic "Contact Us" form that captures user inputs and displays them in a styled summary section upon submission</p>
-    <br>
-    <p class="bold">Roles:</p>
-    <table class="basic-table">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Role</th>
-                <th>Responsibilities</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Jacob Blenis</td>
-                <td>Project Manager & Main Developer</td>
-                <td>Oversees task delegation, ensures progress alignment, and writes core JavaScript functionality</td>
-            </tr>
-            <tr>
-                <td>Trey Burling</td>
-                <td>HTML/CSS/Graphics Lead</td>
-                <td>Designs the form layout and implements responsive CSS styles</td>
-            </tr>
-            <tr>
-                <td>Varun Raj Grandhi</td>
-                <td>Integration & Testing Lead</td>
-                <td>Integrates the form with JavaScript, performs testing, and reviews the code for issues</td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <p class="bold">Execution Steps:</p>
-    <table class="basic-table">
-        <thead>
-            <tr>
-                <th>Phase</th>
-                <th>Time</th>
-                <th>Activities</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Planning Phase</td>
-                <td>15 minutes</td>
-                <td>Jacob assigns specific subtasks, ensuring all members understand their roles; Trey and Varun propose integration strategies</td>
-            </tr>
-            <tr>
-                <td>Development Phase</td>
-                <td>1 hour</td>
-                <td>Each member works on their assigned task while maintaining open communication through a group call or chat</td>
-            </tr>
-            <tr>
-                <td>Integration Phase</td>
-                <td>30 minutes</td>
-                <td>Varun integrates the form and scripts, ensuring functionality; all members test the feature and resolve issues collaboratively</td>
-            </tr>
-            <tr>
-                <td>Reflection Phase</td>
-                <td>15 minutes</td>
-                <td>The team discusses what worked well and identifies areas for improvement in teamwork and communication</td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <p class="bold">Expected Outcomes:</p>
-    <p><strong>Enhanced Communication:</strong> Members will learn to communicate clearly and effectively under time constraints.</p>
-    <p><strong>Improved Collaboration:</strong> The activity fosters respect for each member’s expertise and contributions.</p>
-    <p><strong>Skill Sharing:</strong> Participants strengthen their understanding of each other's tasks and roles, fostering empathy and cross-disciplinary learning.</p>
-    <p><strong>Team Cohesion:</strong> Reinforces the team’s ability to work together under pressure and enhances trust.</p>
-    <br>
-    <p class="bold">Debrief Questions:</p>
-    <p>What were the biggest challenges faced during the exercise, and how did we overcome them?</p>
-    <p>How well did we communicate and manage task dependencies?</p>
-    <p>What improvements can be made in our workflow for the actual project?</p>
-</div>
+        <div class="accordion" id="deliverablesAccordion">
+            <!-- Team Building Exercises Card -->
+            <div class="card w-100">
+                <div class="card-header" id="headingTeamBuilding">
+                    <h2 class="mb-0">
+                        <button class="title collapsed border-0" type="button" data-toggle="collapse" data-target="#collapseTeamBuilding" aria-expanded="false" aria-controls="collapseTeamBuilding">
+                            Team Building Exercises
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTeamBuilding" class="collapse" aria-labelledby="headingTeamBuilding" data-parent="#deliverablesAccordion">
+                    <div class="card-body">
+                        <p class="bold">Exercise Title:</p>
+                        <p>Collaborative Code Sprint Challenge</p>
+                        <br>
+                        <p class="bold">Objective:</p>
+                        <p>To improve teamwork, communication, and collaboration while reinforcing key project skills such as task delegation, efficient problem-solving, and adhering to project deadlines.</p>
+                        <br>
+                        <p class="bold">Activity Description:</p>
+                        <p><strong>Overview:</strong> The team will participate in a simulated coding challenge that mimics real project scenarios. The goal is to collaboratively build a small feature or fix an issue within a predefined time. The exercise emphasizes cross-functional collaboration and skill-sharing.</p>
+                        <br>
+                        <p class="bold">Preparation:</p>
+                        <p><strong>Timeframe:</strong> 2 hours</p>
+                        <p><strong>Tools Required:</strong> Laptops, internet connection, shared Git repository, communication tools (e.g., Slack, Zoom)</p>
+                        <p><strong>Pre-Defined Task:</strong> Create a responsive web page integrating a basic "Contact Us" form that captures user inputs and displays them in a styled summary section upon submission</p>
+                        <br>
+                        <p class="bold">Roles:</p>
+                        <table class="basic-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Role</th>
+                                    <th>Responsibilities</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Jacob Blenis</td>
+                                    <td>Project Manager & Main Developer</td>
+                                    <td>Oversees task delegation, ensures progress alignment, and writes core JavaScript functionality</td>
+                                </tr>
+                                <tr>
+                                    <td>Trey Burling</td>
+                                    <td>HTML/CSS/Graphics Lead</td>
+                                    <td>Designs the form layout and implements responsive CSS styles</td>
+                                </tr>
+                                <tr>
+                                    <td>Varun Raj Grandhi</td>
+                                    <td>Integration & Testing Lead</td>
+                                    <td>Integrates the form with JavaScript, performs testing, and reviews the code for issues</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <p class="bold">Execution Steps:</p>
+                        <table class="basic-table">
+                            <thead>
+                                <tr>
+                                    <th>Phase</th>
+                                    <th>Time</th>
+                                    <th>Activities</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Planning Phase</td>
+                                    <td>15 minutes</td>
+                                    <td>Jacob assigns specific subtasks, ensuring all members understand their roles; Trey and Varun propose integration strategies</td>
+                                </tr>
+                                <tr>
+                                    <td>Development Phase</td>
+                                    <td>1 hour</td>
+                                    <td>Each member works on their assigned task while maintaining open communication through a group call or chat</td>
+                                </tr>
+                                <tr>
+                                    <td>Integration Phase</td>
+                                    <td>30 minutes</td>
+                                    <td>Varun integrates the form and scripts, ensuring functionality; all members test the feature and resolve issues collaboratively</td>
+                                </tr>
+                                <tr>
+                                    <td>Reflection Phase</td>
+                                    <td>15 minutes</td>
+                                    <td>The team discusses what worked well and identifies areas for improvement in teamwork and communication</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <p class="bold">Expected Outcomes:</p>
+                        <p><strong>Enhanced Communication:</strong> Members will learn to communicate clearly and effectively under time constraints.</p>
+                        <p><strong>Improved Collaboration:</strong> The activity fosters respect for each member’s expertise and contributions.</p>
+                        <p><strong>Skill Sharing:</strong> Participants strengthen their understanding of each other's tasks and roles, fostering empathy and cross-disciplinary learning.</p>
+                        <p><strong>Team Cohesion:</strong> Reinforces the team’s ability to work together under pressure and enhances trust.</p>
+                        <br>
+                        <p class="bold">Debrief Questions:</p>
+                        <p>What were the biggest challenges faced during the exercise, and how did we overcome them?</p>
+                        <p>How well did we communicate and manage task dependencies?</p>
+                        <p>What improvements can be made in our workflow for the actual project?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="content-section">
-        <p class="title">Status and Progress Report Templates</p>
-        <br>
-        <br>
-        <br>
-        <h2>Progress Report</h2>
-        <br>
-        <p><strong>Project Name: </strong>Triforce Innovators: Web Portfolio Showcase</p>
-        <p><strong>Reporting Period: </strong>November 22, 2024 – November 28, 2024</p>
-        <br>
-        <br>
-        <p class="bold">1. Accomplishments During This Period:</p>
-        <p>Completed the Project Charter and secured sign-off from all stakeholders.</p>
-        <p>Designed the initial Work Breakdown Structure (WBS) and finalized the Gantt Chart with task allocations.</p>
-        <p>Developed the skeleton of the portfolio website, including the homepage and navigation bar.</p>
-        <p>Created draft mockups for individual sections of the portfolio using Figma.</p>
-        <p>Held team collaboration sessions to finalize the theme and visual style.</p>
-        <br>
-        <p class="bold">2. Plans for the Next Period:</p>
-        <p>Finalize and integrate the CSS and graphics designed by Trey Burling into the portfolio prototype.</p>
-        <p>Conduct initial usability testing to identify design flaws.</p>
-        <p>Implement backend logic for project showcase features and contact forms.</p>
-        <p>Begin documenting Risk Management Plan and creating templates for status and progress reporting.</p>
-        <br>
-        <p class="bold">3. Issues/Impediments Encountered:</p>
-        <p>Delayed acquisition of certain graphic resources due to technical difficulties.</p>
-        <p>Some team members experienced time management issues due to overlapping commitments.</p>
-        <p class="bold">4. Project Changes:</p>
-        <p>Decided to use Bootstrap for rapid prototyping instead of custom CSS in the initial stages.</p>
-        <p>Adjusted the timeline for usability testing to allow more preparation time for mockups and backend integration.</p>
-        <br>
-        <br>
-        <br>
-        <h2>Status Report</h2>
-        <br>
-        <p><strong>Project Name: </strong>Triforce Innovators: Web Portfolio Showcase</p>
-        <p><strong>Reporting Period: </strong>November 28, 2024</p>
-        <br>
-        <br>
-        <p class="bold">1. Current Project Status:</p>
-        <p><strong>Overall Status: </strong>On Track</p>
-        <p><strong>Percentage Completed: </strong>77%</p>
-        <br>
-        <p class="bold">2. Triple Constraint Reflection:</p>
-        <p><strong>Scope: </strong>All deliverables remain within the original project scope, with slight modifications to tools for efficiency.</p>
-        <p><strong>Scope: </strong>Minor delays were encountered in resource acquisition, but the timeline is manageable.</p>
-        <p><strong>Scope: </strong>Project remains within the projected budget of $5735.</p>
-        <br>
-        <p class="bold">3. Key Activities Completed:</p>
-        <p>Developed the homepage structure and finalized navigation.</p>
-        <p>Designed mockups for portfolio sections.</p>
-        <p>Adjusted the project timeline to accommodate unforeseen delays.</p>
-        <br>
-        <p class="bold">4. Next Steps:</p>
-        <p>Conduct usability testing and incorporate feedback into design iterations.</p>
-        <p>Finalize backend implementation, including integration of contact forms.</p>
-        <p>Design and integrate the showcase section for team accomplishments.</p>
-        <br>
-        <p class="bold">5. Risks and Mitigation Strategies:</p>
-        <p><strong>Risk: </strong>Possible delay in finalizing backend integration.</p>
-        <p><strong>Mitigation Strategy: </strong>Allocate additional resources.</p>
-        <br>
-        <p><strong>Risk: </strong>Usability feedback may require extensive design changes.</p>
-        <p><strong>Mitigation Strategy: </strong>Focus on gathering early feedback and applying changes incrementally.</p>
-        <br>
-        <p class="bold">6. Other Notes:</p>
-        <p>Team communication and collaboration have been excellent, with weekly meetings ensuring alignment.</p> 
+        <div class="accordion" id="deliverablesAccordion">
+            <!-- Status and Progress Report Templates Card -->
+            <div class="card w-100">
+                <div class="card-header" id="headingStatusProgress">
+                    <h2 class="mb-0">
+                        <button class="title collapsed border-0" type="button" data-toggle="collapse" data-target="#collapseStatusProgress" aria-expanded="false" aria-controls="collapseStatusProgress">
+                            Status and Progress Report Templates
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseStatusProgress" class="collapse" aria-labelledby="headingStatusProgress" data-parent="#deliverablesAccordion">
+                    <div class="card-body">
+                        <h2>Progress Report</h2>
+                        <br>
+                        <p><strong>Project Name: </strong>Triforce Innovators: Web Portfolio Showcase</p>
+                        <p><strong>Reporting Period: </strong>November 22, 2024 – November 28, 2024</p>
+                        <br>
+                        <p class="bold">1. Accomplishments During This Period:</p>
+                        <p>Completed the Project Charter and secured sign-off from all stakeholders.</p>
+                        <p>Designed the initial Work Breakdown Structure (WBS) and finalized the Gantt Chart with task allocations.</p>
+                        <p>Developed the skeleton of the portfolio website, including the homepage and navigation bar.</p>
+                        <p>Created draft mockups for individual sections of the portfolio using Figma.</p>
+                        <p>Held team collaboration sessions to finalize the theme and visual style.</p>
+                        <br>
+                        <p class="bold">2. Plans for the Next Period:</p>
+                        <p>Finalize and integrate the CSS and graphics designed by Trey Burling into the portfolio prototype.</p>
+                        <p>Conduct initial usability testing to identify design flaws.</p>
+                        <p>Implement backend logic for project showcase features and contact forms.</p>
+                        <p>Begin documenting Risk Management Plan and creating templates for status and progress reporting.</p>
+                        <br>
+                        <p class="bold">3. Issues/Impediments Encountered:</p>
+                        <p>Delayed acquisition of certain graphic resources due to technical difficulties.</p>
+                        <p>Some team members experienced time management issues due to overlapping commitments.</p>
+                        <br>
+                        <p class="bold">4. Project Changes:</p>
+                        <p>Decided to use Bootstrap for rapid prototyping instead of custom CSS in the initial stages.</p>
+                        <p>Adjusted the timeline for usability testing to allow more preparation time for mockups and backend integration.</p>
+                        <br>
+                        <h2>Status Report</h2>
+                        <br>
+                        <p><strong>Project Name: </strong>Triforce Innovators: Web Portfolio Showcase</p>
+                        <p><strong>Reporting Period: </strong>November 28, 2024</p>
+                        <br>
+                        <p class="bold">1. Current Project Status:</p>
+                        <p><strong>Overall Status: </strong>On Track</p>
+                        <p><strong>Percentage Completed: </strong>77%</p>
+                        <br>
+                        <p class="bold">2. Triple Constraint Reflection:</p>
+                        <p><strong>Scope: </strong>All deliverables remain within the original project scope, with slight modifications to tools for efficiency.</p>
+                        <p><strong>Schedule: </strong>Minor delays were encountered in resource acquisition, but the timeline is manageable.</p>
+                        <p><strong>Budget: </strong>Project remains within the projected budget of $5735.</p>
+                        <br>
+                        <p class="bold">3. Key Activities Completed:</p>
+                        <p>Developed the homepage structure and finalized navigation.</p>
+                        <p>Designed mockups for portfolio sections.</p>
+                        <p>Adjusted the project timeline to accommodate unforeseen delays.</p>
+                        <br>
+                        <p class="bold">4. Next Steps:</p>
+                        <p>Conduct usability testing and incorporate feedback into design iterations.</p>
+                        <p>Finalize backend implementation, including integration of contact forms.</p>
+                        <p>Design and integrate the showcase section for team accomplishments.</p>
+                        <br>
+                        <p class="bold">5. Risks and Mitigation Strategies:</p>
+                        <p><strong>Risk: </strong>Possible delay in finalizing backend integration.</p>
+                        <p><strong>Mitigation Strategy: </strong>Allocate additional resources.</p>
+                        <br>
+                        <p><strong>Risk: </strong>Usability feedback may require extensive design changes.</p>
+                        <p><strong>Mitigation Strategy: </strong>Focus on gathering early feedback and applying changes incrementally.</p>
+                        <br>
+                        <p class="bold">6. Other Notes:</p>
+                        <p>Team communication and collaboration have been excellent, with weekly meetings ensuring alignment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-   
+
     <div class="content-section">
-    <p class="title">Risk Management Plans</p>
-    <br>
-    <p class="bold">1. Methodology:</p>
-    <p>This Risk Management Plan follows a proactive, systematic approach to identifying, assessing, mitigating, and monitoring risks. The methodology includes:</p>
-    <p> - Identifying risks based on brainstorming and past project data.</p>
-    <p> - Analyzing risks using qualitative and quantitative methods (risk probability and impact matrix).</p>
-    <p> - Developing mitigation strategies for high-priority risks.</p>
-    <p> - Monitoring risks through regular reviews and project updates.</p>
-    <p> - Documenting all risks in a centralized Risk Register for tracking.</p>
-    <br>
-    <p class="bold">2. Roles and Responsibilities:</p>
-    <p><strong>Project Manager (Jacob Blenis):</strong> Oversees the risk management process, ensures adherence to the plan, and communicates with stakeholders.</p>
-    <p><strong>UI/UX Lead (Trey Burling):</strong> Identifies and mitigates risks related to front-end design and visual components.</p>
-    <p><strong>Integration Lead (Varun Raj Grandhi):</strong> Manages risks related to testing, backend integration, and deployment.</p>
-    <p><strong>All Team Members:</strong> Actively identify risks during their tasks and communicate them to the Project Manager.</p>
-    <br>
-    <p class="bold">3. Budget and Schedule for Risk Management:</p>
-    <p><strong>Budget Allocation:</strong> $500 for contingency (tools, additional resources, or time).</p>
-    <p><strong>Schedule:</strong> Risk assessments conducted weekly during team meetings. High-priority risks are addressed immediately.</p>
-    <br>
-    <p class="bold">4. Risk Categories:</p>
-    <p><strong>Technical:</strong> Issues with tools, code, or technology.</p>
-    <p><strong>Schedule:</strong> Delays in deliverables or critical tasks.</p>
-    <p><strong>Cost:</strong> Budget overruns due to unplanned expenses.</p>
-    <p><strong>Resource:</strong> Availability or performance issues with team members or tools.</p>
-    <p><strong>External:</strong> Risks outside the team’s control, such as stakeholder feedback or dependencies.</p>
-    <br>
-    <p class="bold">5. Risk Probability and Impact Assessment:</p>
-    <table class="basic-table">
-        <thead>
-            <tr>
-                <th>Probability</th>
-                <th>Impact</th>
-                <th>Level of Risk</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>High</td>
-                <td>High</td>
-                <td>Critical</td>
-            </tr>
-            <tr>
-                <td>Medium</td>
-                <td>High</td>
-                <td>Major</td>
-            </tr>
-            <tr>
-                <td>High</td>
-                <td>Medium</td>
-                <td>Major</td>
-            </tr>
-            <tr>
-                <td>Medium</td>
-                <td>Medium</td>
-                <td>Moderate</td>
-            </tr>
-            <tr>
-                <td>Low</td>
-                <td>High</td>
-                <td>Moderate</td>
-            </tr>
-            <tr>
-                <td>Low</td>
-                <td>Medium</td>
-                <td>Low</td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <p class="bold">6. Stakeholder Tolerance:</p>
-    <p>Stakeholders have a moderate risk tolerance and expect timely communication about potential delays, cost overruns, or scope changes. Risks with major or critical impact must be escalated immediately.</p>
-    <br>
-    <p class="bold">7. Risk Tracking:</p>
-    <p>A Risk Register will be maintained, updated weekly, and include:</p>
-    <p> - Risk description.</p>
-    <p> - Probability and impact ratings.</p>
-    <p> - Risk owner.</p>
-    <p> - Mitigation or contingency strategies.</p>
-    <p> - Status updates.</p>
-    <br>
-    <p class="bold">8. Risk Documentation:</p>
-    <table class="basic-table">
-        <thead>
-            <tr>
-                <th>Risk ID</th>
-                <th>Risk Description</th>
-                <th>Probability</th>
-                <th>Impact</th>
-                <th>Owner</th>
-                <th>Mitigation Plan</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>R-01</td>
-                <td>Delay in graphic design resources</td>
-                <td>High</td>
-                <td>High</td>
-                <td>Trey Burling</td>
-                <td>Use pre-made templates or expedited replacements</td>
-                <td>Active</td>
-            </tr>
-            <tr>
-                <td>R-02</td>
-                <td>Usability feedback requires major changes</td>
-                <td>High</td>
-                <td>Critical</td>
-                <td>Varun Raj Grandhi</td>
-                <td>Allocate extra testing time, involve Jacob early</td>
-                <td>Active</td>
-            </tr>
-            <tr>
-                <td>R-03</td>
-                <td>Backend integration issues</td>
-                <td>High</td>
-                <td>Major</td>
-                <td>Jacob Blenis</td>
-                <td>Conduct early testing with stakeholders</td>
-                <td>Active</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="card w-100">
+        <div class="card-header" id="headingRiskManagement">
+            <h2 class="mb-0">
+                <button class="title collapsed border-0" type="button" data-toggle="collapse" data-target="#collapseRiskManagement" aria-expanded="false" aria-controls="collapseRiskManagement">
+                    Risk Management Plan
+                </button>
+            </h2>
+        </div>
+        <div id="collapseRiskManagement" class="collapse" aria-labelledby="headingRiskManagement" data-parent="#deliverablesAccordion">
+            <div class="card-body">
+                <p class="bold">1. Methodology:</p>
+                <p>This Risk Management Plan follows a proactive, systematic approach to identifying, assessing, mitigating, and monitoring risks. The methodology includes:</p>
+                <p> - Identifying risks based on brainstorming and past project data.</p>
+                <p> - Analyzing risks using qualitative and quantitative methods (risk probability and impact matrix).</p>
+                <p> - Developing mitigation strategies for high-priority risks.</p>
+                <p> - Monitoring risks through regular reviews and project updates.</p>
+                <p> - Documenting all risks in a centralized Risk Register for tracking.</p>
+                <br>
+                <p class="bold">2. Roles and Responsibilities:</p>
+                <p><strong>Project Manager (Jacob Blenis):</strong> Oversees the risk management process, ensures adherence to the plan, and communicates with stakeholders.</p>
+                <p><strong>UI/UX Lead (Trey Burling):</strong> Identifies and mitigates risks related to front-end design and visual components.</p>
+                <p><strong>Integration Lead (Varun Raj Grandhi):</strong> Manages risks related to testing, backend integration, and deployment.</p>
+                <p><strong>All Team Members:</strong> Actively identify risks during their tasks and communicate them to the Project Manager.</p>
+                <br>
+                <p class="bold">3. Budget and Schedule for Risk Management:</p>
+                <p><strong>Budget Allocation:</strong> $500 for contingency (tools, additional resources, or time).</p>
+                <p><strong>Schedule:</strong> Risk assessments conducted weekly during team meetings. High-priority risks are addressed immediately.</p>
+                <br>
+                <p class="bold">4. Risk Categories:</p>
+                <p><strong>Technical:</strong> Issues with tools, code, or technology.</p>
+                <p><strong>Schedule:</strong> Delays in deliverables or critical tasks.</p>
+                <p><strong>Cost:</strong> Budget overruns due to unplanned expenses.</p>
+                <p><strong>Resource:</strong> Availability or performance issues with team members or tools.</p>
+                <p><strong>External:</strong> Risks outside the team’s control, such as stakeholder feedback or dependencies.</p>
+                <br>
+                <p class="bold">5. Risk Probability and Impact Assessment:</p>
+                <table class="basic-table">
+                    <thead>
+                        <tr>
+                            <th>Probability</th>
+                            <th>Impact</th>
+                            <th>Level of Risk</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>High</td>
+                            <td>High</td>
+                            <td>Critical</td>
+                        </tr>
+                        <tr>
+                            <td>Medium</td>
+                            <td>High</td>
+                            <td>Major</td>
+                        </tr>
+                        <tr>
+                            <td>High</td>
+                            <td>Medium</td>
+                            <td>Major</td>
+                        </tr>
+                        <tr>
+                            <td>Medium</td>
+                            <td>Medium</td>
+                            <td>Moderate</td>
+                        </tr>
+                        <tr>
+                            <td>Low</td>
+                            <td>High</td>
+                            <td>Moderate</td>
+                        </tr>
+                        <tr>
+                            <td>Low</td>
+                            <td>Medium</td>
+                            <td>Low</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <p class="bold">6. Stakeholder Tolerance:</p>
+                <p>Stakeholders have a moderate risk tolerance and expect timely communication about potential delays, cost overruns, or scope changes. Risks with major or critical impact must be escalated immediately.</p>
+                <br>
+                <p class="bold">7. Risk Tracking:</p>
+                <p>A Risk Register will be maintained, updated weekly, and include:</p>
+                <p> - Risk description.</p>
+                <p> - Probability and impact ratings.</p>
+                <p> - Risk owner.</p>
+                <p> - Mitigation or contingency strategies.</p>
+                <p> - Status updates.</p>
+                <br>
+                <p class="bold">8. Risk Documentation:</p>
+                <table class="basic-table">
+                    <thead>
+                        <tr>
+                            <th>Risk ID</th>
+                            <th>Risk Description</th>
+                            <th>Probability</th>
+                            <th>Impact</th>
+                            <th>Owner</th>
+                            <th>Mitigation Plan</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>R-01</td>
+                            <td>Delay in graphic design resources</td>
+                            <td>High</td>
+                            <td>High</td>
+                            <td>Trey Burling</td>
+                            <td>Use pre-made templates or expedited replacements</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>R-02</td>
+                            <td>Usability feedback requires major changes</td>
+                            <td>High</td>
+                            <td>Critical</td>
+                            <td>Varun Raj Grandhi</td>
+                            <td>Allocate extra testing time, involve Jacob early</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>R-03</td>
+                            <td>Backend integration issues</td>
+                            <td>High</td>
+                            <td>Major</td>
+                            <td>Jacob Blenis</td>
+                            <td>Conduct early testing with stakeholders</td>
+                            <td>Active</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
 </div>
 
 </body>

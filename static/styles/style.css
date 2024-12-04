@@ -232,6 +232,13 @@ body {
     background-color: #f1f1f1;
 }
 
+.event-day {
+    background-color: #ffeb3b; /* Highlight color */
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
