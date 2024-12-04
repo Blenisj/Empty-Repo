@@ -231,3 +231,39 @@ body {
 .calendar tr:hover {
     background-color: #f1f1f1;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td{
+    border: 1px solid #333A56;
+    padding: 8px;
+}
+
+.total-row {
+    font-weight: bold;
+    background-color: #ede8c5;
+}
+
+.category-row {
+    font-weight: bold;
+    background-color: #f3f0d8;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.section-title {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 20px;
+}
