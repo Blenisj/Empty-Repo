@@ -190,13 +190,13 @@ body {
     margin: 2rem auto;
 }
 
-.image-index{
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-    margin: 2rem auto;
+.image-index img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
 }
-
 /* Style for paragraphs in content sections */
 .content-section p {
     margin-bottom: 20px;
