@@ -24,7 +24,6 @@ The TriForce Innovators project aims to create a dynamic, collaborative web-base
     ```sh
     python server.py
 
-
 Usage
 ===================================
 
