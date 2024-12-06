@@ -11,14 +11,17 @@ The TriForce Innovators project aims to create a dynamic, collaborative web-base
    cd <repository-directory>
 
 2. **Create and activate a virtual environment:**
+    ```sh
     python -m venv .venv
     source .venv/bin/activate  # On macOS/Linux
     .venv\Scripts\activate     # On Windows
 
 3. **Install the required packages:**
+    ```sh
     pip install -r requirements.txt
 
 4. **Run the Flask application:**
+    ```sh
     python server.py
 
 
@@ -53,9 +56,9 @@ Click the "Add Event" button to add the event to the calendar.
 - Status and Progress Report Templates: Templates for tracking project progress.
 - Risk Management Plans: Plans for identifying and mitigating project risks.
 ## Team Members
-Jacob Blenis: Project Manager & Lead Developer
-Trey Burlington: UI/UX Specialist
-Varun Raj Grandhi: Technical Lead
+- Jacob Blenis: Project Manager & Lead Developer
+- Trey Burlington: UI/UX Specialist
+- Varun Raj Grandhi: Technical Lead
 
 
 ## Acknowledgements
