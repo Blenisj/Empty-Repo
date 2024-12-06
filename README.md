@@ -56,7 +56,7 @@ Click the "Add Event" button to add the event to the calendar.
 - Risk Management Plans: Plans for identifying and mitigating project risks.
 ## Team Members
 - Jacob Blenis: Project Manager & Lead Developer
-- Trey Burlington: UI/UX Specialist
+- Trey Burling: UI/UX Specialist
 - Varun Raj Grandhi: Technical Lead
 
 
